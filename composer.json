@@ -1,0 +1,39 @@
+{
+    "name": "dskripchenko/yandex-smart-captcha",
+    "description": "Yandex Smart Captcha",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "yandex",
+        "captcha",
+        "smartcaptcha"
+    ],
+    "authors": [
+        {
+            "name": "Denis Skripchenko",
+            "email": "denskrp90@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "dskripchenko/php-array-helper": "^1.1",
+        "laravel/framework": "6.*|7.*|8.*|9.*|10.*",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Dskripchenko\\YandexSmartCaptcha\\": [
+                "src/"
+            ]
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dskripchenko\\YandexSmartCaptcha\\Providers\\YandexSmartCaptchaServiceProvider"
+            ]
+        }
+    }
+}
