@@ -107,6 +107,7 @@ class YandexSmartCaptcha
     {
         return new Client([
             'base_uri' => $this->url,
+            'verify' => false
         ]);
     }
 }
